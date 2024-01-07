@@ -35,7 +35,8 @@ const PostList: React.FC = () => {
       backgroundColor: '#f0f0f0',
       padding: '20px',
       fontFamily: 'Arial, sans-serif',
-      width: '700px',
+      width: '940px',
+      marginLeft: '8px',
     },
     header: {
       display: 'flex',

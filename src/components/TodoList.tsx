@@ -22,7 +22,8 @@ const TodoList: React.FC = () => {
 
   const styles = {
     container: {
-      width: '700px',
+      width: '940px',
+      marginLeft: '8px',
       backgroundColor: '#f0f0f0',
       padding: '20px',
       fontFamily: 'Arial, sans-serif',
@@ -35,10 +36,9 @@ const TodoList: React.FC = () => {
       padding: '0px 0px',
     },
     todoTitle: {
-      fontWeight: 'bold',
-      fontSize: '24px',
+      fontFamily: 'Arial, sans-serif',
       margin: '20px 0',
-      color: '#333',
+      color: '#000',
     },
     todo: {
       backgroundColor: 'white',

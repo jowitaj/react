@@ -35,8 +35,10 @@ const UserList: React.FC = () => {
       backgroundColor: '#f0f0f0',
       padding: '20px',
       fontFamily: 'Arial, sans-serif',
-      width: '700px',
+      width: '940px',
+      marginLeft: '8px',
     },
+
     header: {
       display: 'flex',
       justifyContent: 'space-between',
@@ -51,13 +53,14 @@ const UserList: React.FC = () => {
     },
     user: {
       padding: '0px',
-      marginTop: '0px',
       borderRadius: '0px',
       boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
       listStyleType: 'none',
     },
+  
     button: {
       backgroundColor: '#333333',
+      marginBottom:'20px',
       color: 'white',
       border: '1px solid #333333',
       padding: '10px 20px',
@@ -73,14 +76,14 @@ const UserList: React.FC = () => {
         <h1>Użytkownicy</h1>
       </div>
       <CreateUserForm onUserCreated={loadUsers} />
-      <ul>
-        {users.map(user => (
-          <li key={user.id} style={styles.user}>
-            <p style={styles.userTitle}>{user.name} - {user.email}</p>
-            <button style={styles.button} onClick={() => handleDelete(user.id)}>Delete</button>
-          </li>
-        ))}
-      </ul>
+      <div>
+    {users.map(user => (
+    <div key={user.id}>
+      <p style={styles.userTitle}>{user.name} - {user.email}</p>
+      <button style={styles.button} onClick={() => handleDelete(user.id)}>Delete</button>
+    </div>
+   ))}
+</div>
     </div>
   );
 };

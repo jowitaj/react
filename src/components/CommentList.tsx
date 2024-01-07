@@ -26,7 +26,8 @@ const CommentList: React.FC = () => {
       backgroundColor: '#f0f0f0',
       padding: '20px',
       fontFamily: 'Arial, sans-serif',
-      width: '700px',
+      width: '940px',
+      marginLeft: '8px',
      
     },
     header: {
@@ -63,7 +64,7 @@ const CommentList: React.FC = () => {
   return (
     <div style={styles.container}>
       <div style={styles.header}>
-        <h1>COMMENTS</h1>
+        <h1>DISSCUSSION</h1>
       </div>
       <div style={styles.commentTitle}>Create Comment</div>
       <CreateCommentForm onCommentCreated={loadComments} />
