@@ -1,4 +1,3 @@
-// services/CommentService.ts
 import axios from 'axios';
 import { Comment } from '../models/Comment';
 
@@ -9,7 +8,6 @@ export const fetchComments = async (): Promise<Comment[]> => {
   return response.data;
 };
 
-// services/CommentService.ts
 export const createComment = async (comment: Comment): Promise<Comment> => {
   const response = await axios.post<Comment>(`${API_URL}`, comment);
   console.log('Created Comment:', response.data);

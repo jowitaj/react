@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://lh3.googleusercontent.com/pw/ABLVV860Fr-dHU44QV8bMAWQM2aeMR0PQsCUlQ41_t9cemcqzBqPbocpRSviDWDvCDHN1SLfLBuYYkNFY3fHJCHsSGOPQj51orP-hR4ef0_BRzoqXSTYOQSjPZo3OAUCHf73HHMYXl50p6Hn91al6j-6wMAccmQfNb80vbFP7kKqCS3utIKEKwA98CW4SC0AUG3NF6mMmLdxiX2eV0vX6qcCQatTvuBhw4zH55Qe-elUfXFBpZui0gNoP1UYOr1Xtg78-z_bwHLH7rPx-x4URXa54EMs90OmgnXqjIg-l-QTAn9DZzLLZl1BLoKyBMccmDiQ_-YYJp5C1v_IbjB_m3ihzKP7qsLgjROeP9x1yjkWx1ekZlwXZAWG7MNhkYxZIXNIrcnggQ-vNeKqxguZp92L4WQwLHBERRffasIp9Os3YbL6-6x47tntfra899P6W0atm16m-wMxZ8KQDgZIc675yhI6doWMZllNBgSN8D4Qyby5k6WbdSZghcj4fHke2pxtqOb4ji3aDJ7KtTqMkMrPOIOoCxObOz8ljt1N2__UUFoaFmmPhp-KZzgxeO0YPO8vp0_v7vjCwbUBYn3zIvFE6gtcnmWovszrDMrqVF_QJCLPb3MrTd8gDeeTRKFG3sWcl2YfNPXR10Lx--gIco3UudRxJBDAOsJHhu8OwKb1EJs_v92x5m43PZxxSGFBNhuY2dq18h9OpcqYjoQPbEiDnWwAbmCf7n8toD31k-cXkto26tRLzRGTj0YDR1uyJ1x-5csv798P91oodYoE3GYdtKOHGL8G_xoM3lcrt9kcnHYDBbU2v-bmh7fZ2r9AkdpAW3dbGWckbx_paMKCTXFJJR374UUpg2OZolB8PqIKZ9zh6dsrsobAGgbWIEqHcA0ZWPc8zMrHYXj2FEy_wCuHgKMONtokW0OaYEMfAJbT2UNS_831Ms70mgPmlUSbjrWQe2TWbgz7PXvPNkEba9wb_cUuyYrGnl7vkov-bwx_qKqJcHEunLvox6163-S-umjmoY3fUnm3OyBuEEFkNw=w2124-h1416-s-no-gm?authuser=1');
+  background-size: cover;
+  opacity: 0.7; 
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  min-height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+ul {
+  list-style-type: none; 
+  padding: 0;
+  margin: 0; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 550px; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px; 
+  height: 150px; 
+  margin: 8px;
+  color: white; 
+  font-size: 18px; 
+  text-transform: uppercase; 
+  font-family: 'Times New Roman', serif; 
+  text-align: center;
+  transition: transform 0.3s;
+  line-height: 150px; 
+  background-color: rgba(37, 38, 39, 0.298); 
+  border-radius: 8px;
+   box-shadow: 0 0 20px rgba(221, 221, 221, 0.5); 
 }
+
+ul li a {
+  color: white; 
+  text-decoration: none; 
+}
+
+ul li:hover {
+  transform: scale(1.1);
+}
+
+
+#id1 {width: 150px; height: 150px;}
+#id2 {width: 150px; height: 150px;} 
+#id3 {width: 150px; height: 150px;} 
+#id4 {width: 150px; height: 150px;} 
+#id5 {width: 150px; height: 150px;}
+#id6 {width: 150px; height: 150px;} 

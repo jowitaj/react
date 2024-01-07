@@ -1,4 +1,3 @@
-// App.tsx
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import PostList from './components/PostList';
@@ -11,15 +10,16 @@ import TodoList from './components/TodoList';
 const App: React.FC = () => {
   return (
     <Router> 
+      
       <div>
         <nav>
           <ul>
-            <li><Link to="/posts">Posty</Link></li>
-            <li><Link to="/users">Użytkownicy</Link></li>
-            <li><Link to="/comments">Komentarze</Link></li>
-            <li><Link to="/albums">Albumy</Link></li>
-            <li><Link to="/photos">Zdjęcia</Link></li>
-            <li><Link to="/todos">Zadania</Link></li>
+            <li><Link id="id1"  to="/posts">Posts</Link></li>
+            <li><Link id="id2" to="/users">Workmates</Link></li>
+            <li><Link id="id3" to="/comments">Discussion</Link></li>
+            <li><Link id="id4" to="/albums">Albums</Link></li>
+            <li><Link id="id5" to="/photos">Photos</Link></li>
+            <li><Link id="id6" to="/todos">ToDo</Link></li>
           </ul>
         </nav>
 

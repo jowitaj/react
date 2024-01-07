@@ -23,7 +23,6 @@ export const createPost = async (post: Post): Promise<Post> => {
   }
 };
 
-// services/PostService.ts
 export const deletePost = async (id: number): Promise<void> => {
   try {
     const response = await axios.delete(`${API_URL}${id}`);

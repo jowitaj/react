@@ -1,4 +1,3 @@
-// services/AlbumService.ts
 import axios from 'axios';
 import { Album } from '../models/Album';
 
@@ -9,7 +8,6 @@ export const fetchAlbums = async (): Promise<Album[]> => {
   return response.data;
 };
 
-// services/AlbumService.ts
 export const createAlbum = async (album: Album): Promise<Album> => {
   const response = await axios.post<Album>(`${API_URL}`, album);
   console.log('Created Album:', response.data);

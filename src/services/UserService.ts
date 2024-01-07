@@ -1,4 +1,3 @@
-// services/UserService.ts
 import axios from 'axios';
 import { User } from '../models/User';
 
@@ -9,7 +8,6 @@ export const fetchUsers = async (): Promise<User[]> => {
   return response.data;
 };
 
-// services/UserService.ts
 export const createUser = async (user: User): Promise<User> => {
   const response = await axios.post<User>(`${API_URL}`, user);
   console.log('Created User:', response.data);

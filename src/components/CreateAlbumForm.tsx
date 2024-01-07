@@ -1,4 +1,3 @@
-// components/CreateAlbumForm.tsx
 import React, { useState } from 'react';
 import { createAlbum } from '../services/AlbumService';
 import { Album } from '../models/Album';
@@ -14,21 +13,24 @@ const CreateAlbumForm: React.FC<CreateAlbumFormProps> = ({ onAlbumCreated }) => 
     e.preventDefault();
     await createAlbum(album);
     onAlbumCreated();
-    setAlbum({ id: 0, userId: 1, title: '' }); // Reset form
+    setAlbum({ id: 0, userId: 1, title: '' });
   };
 
   return (
     <form onSubmit={handleSubmit}>
       <div>
         <label>Title:</label>
+        <br></br>
         <input
           type="text"
           value={album.title}
           onChange={e => setAlbum({ ...album, title: e.target.value })}
         />
       </div>
+      <br></br>
       <button type="submit">Create Album</button>
     </form>
+    
   );
 };
 

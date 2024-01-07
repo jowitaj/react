@@ -1,12 +1,11 @@
-// components/CreatePostForm.tsx
 import React, { useState } from 'react';
 import { createPost } from '../services/PostService';
 import { Post } from '../models/Post';
-import { Photo } from '../models/Photo'; // Zaimportuj model Photo
+import { Photo } from '../models/Photo'; 
 
 interface CreatePostFormProps {
   onPostCreated: () => void;
-  photos: Photo[]; // Lista zdjęć jako prop
+  photos: Photo[]; 
 }
 
 const CreatePostForm: React.FC<CreatePostFormProps> = ({ onPostCreated, photos }) => {
@@ -23,21 +22,26 @@ const CreatePostForm: React.FC<CreatePostFormProps> = ({ onPostCreated, photos }
     <form onSubmit={handleSubmit}>
       <div>
         <label>Title:</label>
+        <br></br>
         <input
           type="text"
           value={post.title}
           onChange={e => setPost({ ...post, title: e.target.value })}
         />
       </div>
+      <br></br>
       <div>
-        <label>Body:</label>
+        <label>Text:</label>
+        <br></br>
         <textarea
           value={post.body}
           onChange={e => setPost({ ...post, body: e.target.value })}
         />
       </div>
+      <br></br>
       <div>
         <label>Photo:</label>
+        <br></br>
         <select
           value={post.photoId}
           onChange={e => setPost({ ...post, photoId: parseInt(e.target.value, 10) })}
@@ -49,7 +53,9 @@ const CreatePostForm: React.FC<CreatePostFormProps> = ({ onPostCreated, photos }
           ))}
         </select>
       </div>
+      <br></br>
       <button type="submit">Create Post</button>
+      <br></br>
     </form>
   );
 };

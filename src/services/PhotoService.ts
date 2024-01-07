@@ -1,4 +1,3 @@
-// services/PhotoService.ts
 import axios from 'axios';
 import { Photo } from '../models/Photo';
 
@@ -9,7 +8,6 @@ export const fetchPhotos = async (): Promise<Photo[]> => {
   return response.data;
 };
 
-// services/PhotoService.ts
 export const createPhoto = async (photo: Photo): Promise<Photo> => {
   const response = await axios.post<Photo>(`${API_URL}`, photo);
   console.log('Created Photo:', response.data);

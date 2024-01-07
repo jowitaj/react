@@ -1,4 +1,3 @@
-// models/Photo.ts
 export interface Photo {
     id: number;
     albumId: number;

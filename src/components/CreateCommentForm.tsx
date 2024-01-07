@@ -1,4 +1,3 @@
-// components/CreateCommentForm.tsx
 import React, { useState } from 'react';
 import { createComment } from '../services/CommentService';
 import { Comment } from '../models/Comment';
@@ -14,35 +13,48 @@ const CreateCommentForm: React.FC<CreateCommentFormProps> = ({ onCommentCreated 
     e.preventDefault();
     await createComment(comment);
     onCommentCreated();
-    setComment({ id: 0, postId: 1, name: '', email: '', body: '' }); // Reset form
+    setComment({ id: 0, postId: 1, name: '', email: '', body: '' }); 
   };
 
   return (
     <form onSubmit={handleSubmit}>
       <div>
         <label>Name:</label>
+        <br></br>
+
         <input
           type="text"
           value={comment.name}
           onChange={e => setComment({ ...comment, name: e.target.value })}
         />
       </div>
+      <br></br>
       <div>
         <label>Email:</label>
+        <br></br>
+
         <input
           type="email"
           value={comment.email}
           onChange={e => setComment({ ...comment, email: e.target.value })}
         />
       </div>
+      <br></br>
+
       <div>
-        <label>Body:</label>
+        <label>Text:</label>
+        <br></br>
+
         <textarea
           value={comment.body}
           onChange={e => setComment({ ...comment, body: e.target.value })}
         />
       </div>
-      <button type="submit">Create Comment</button>
+      <br></br>
+
+      <button type="submit">Create</button>
+      <br></br>
+
     </form>
   );
 };

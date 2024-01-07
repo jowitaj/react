@@ -1,4 +1,3 @@
-// components/CreateUserForm.tsx
 import React, { useState } from 'react';
 import { createUser } from '../services/UserService';
 import { User } from '../models/User';
@@ -14,37 +13,48 @@ const CreateUserForm: React.FC<CreateUserFormProps> = ({ onUserCreated }) => {
     e.preventDefault();
     await createUser(user);
     onUserCreated();
-    setUser({ id: 0, name: '', username: '', email: '' }); // Reset form
+    setUser({ id: 0, name: '', username: '', email: '' });
   };
 
   return (
     <form onSubmit={handleSubmit}>
       <div>
         <label>Name:</label>
+        <br></br>
         <input
           type="text"
           value={user.name}
           onChange={e => setUser({ ...user, name: e.target.value })}
         />
       </div>
+      <br></br>
       <div>
         <label>Username:</label>
+        <br></br>
         <input
           type="text"
           value={user.username}
           onChange={e => setUser({ ...user, username: e.target.value })}
         />
       </div>
+      <br></br>
       <div>
         <label>Email:</label>
+        <br></br>
         <input
           type="email"
           value={user.email}
           onChange={e => setUser({ ...user, email: e.target.value })}
         />
       </div>
+      <br></br>
       <button type="submit">Create User</button>
+      <br></br>
+      <br></br>
+      
     </form>
+
+    
   );
 };
 
