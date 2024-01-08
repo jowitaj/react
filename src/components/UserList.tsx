@@ -73,7 +73,7 @@ const UserList: React.FC = () => {
   return (
     <div style={styles.container}>
       <div style={styles.header}>
-        <h1>Użytkownicy</h1>
+        <h1>WORKMATES</h1>
       </div>
       <CreateUserForm onUserCreated={loadUsers} />
       <div>

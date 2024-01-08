@@ -64,7 +64,7 @@ const CommentList: React.FC = () => {
   return (
     <div style={styles.container}>
       <div style={styles.header}>
-        <h1>DISSCUSSION</h1>
+        <h1>DISCUSSION</h1>
       </div>
       <div style={styles.commentTitle}>Create Comment</div>
       <CreateCommentForm onCommentCreated={loadComments} />
